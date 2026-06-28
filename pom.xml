@@ -32,6 +32,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <lombok.version>1.18.46</lombok.version>
         <djl.version>0.28.0</djl.version>
         <hutool.version>5.8.27</hutool.version>
         <jsoup.version>1.17.2</jsoup.version>
