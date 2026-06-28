@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agent-server
+
+# ========== Agent 配置 ==========
+agent:
+  # 模型存放目录
+  model-dir: ./models
+  # 默认模型名称（ONNX 格式）
+  default-model: distilbart-cnn-6-12
+  # 总结最大长度（token）
+  max-summary-length: 150
+  # 总结最小长度（token）
+  min-summary-length: 40
+  # 长文本分段大小（字符数）
+  chunk-size: 1024
+  # 任务超时（分钟）
+  task-timeout-minutes: 30
+  # 异步任务线程池
+  async:
+    core-pool-size: 4
+    max-pool-size: 8
+    queue-capacity: 100
+  # 结果缓存（简单内存缓存）
+  cache:
+    enabled: true
+    max-size: 1000
+    ttl-minutes: 60
+
+# ========== Actuator ==========
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

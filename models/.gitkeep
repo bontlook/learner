@@ -1,0 +1,1 @@
+# DJL 模型存放目录\n# 将 .onnx 模型文件放入此目录\n# 支持的模型: distilbart-cnn-6-12, t5-small, qwen2.5-1.5b 等\n

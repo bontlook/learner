@@ -1,0 +1,31 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Spring Boot
+*.log
+*.pid
+
+# DJL 模型文件（太大，不提交 git）
+models/*.onnx
+models/*.pt
+models/*.bin
+models/*.safetensors
+models/*.json
+!models/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+~*
